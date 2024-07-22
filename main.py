@@ -8,7 +8,7 @@ from PIL import Image
 app = FastAPI()
 
 # Load the pre-trained model
-model = load_model('fashion mnist.keras')
+model = load_model('fashion_mnist_model.keras')
 
 @app.get("/")
 async def read_root():
